@@ -82,8 +82,8 @@
 - 重新pod install<br />
 ![5.1](http://picture-ws.oss-cn-beijing.aliyuncs.com/WSCategory/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-10-13%20%E4%B8%8B%E5%8D%883.15.46.png?Expires=1507882570&OSSAccessKeyId=TMP.AQF3AWFf2YDKJ_dyvr6nVlvg_vtKzDtjzXDTugc1IOCpP28NKgk23VOIcT3BAAAwLAIUF8Bj-uTz4hlJ2e-zgUt3OOjZ6MMCFHX9nZ0Qmlgrq7C1czPKEf_va67G&Signature=BNg66jfKky1Ig1btlEokIG5o9ms%3D "5.1")
 
-## 附录一（pod lib lint 错误信息 及 解决方法）
-## 附录二（pod repo push 错误信息 及 解决方法）
+## 附录一（pod lib lint 错误信息 及 解决方法，后续补充..）
+## 附录二（pod repo push 错误信息 及 解决方法，后续补充..）
          ERROR | [iOS] unknown: Encountered an unknown error ([!] /usr/bin/git clone https://github.com/wushuai1415/WSSpecs.git /var/folders/h0/dkxsqhyn0ldb6xznmdw3ywyw0000gn/T/d20171013-60019-13ykicu --template= --single-branch --depth 1 --branch 0.0.1
          错误原因：git仓库没有打tag
 ## 附录三（readme编辑格式）
