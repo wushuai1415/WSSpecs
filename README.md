@@ -1,14 +1,44 @@
 # WSSpecs
 ## 1.创建git仓库
-在git仓库中创建一个新仓库，这里我们以码云为例：
+- 在git仓库中创建一个新仓库，这里我们以码云为例：
 ![创建git仓库](http://picture-ws.oss-cn-beijing.aliyuncs.com/WSCategory/181FF836-4ACD-4A6B-B97A-D3AC031E1816.png?Expires=1507869961&OSSAccessKeyId=TMP.AQF3AWFf2YDKJ_dyvr6nVlvg_vtKzDtjzXDTugc1IOCpP28NKgk23VOIcT3BAAAwLAIUF8Bj-uTz4hlJ2e-zgUt3OOjZ6MMCFHX9nZ0Qmlgrq7C1czPKEf_va67G&Signature=e2gi2zZWml%2BekM1vXR%2FyX%2BPXOv8%3D "创建git仓库")<br />
-点击创建会生成3个文件，readme为说明文件具体编写格式下面有具体说明，LICENSE文件为开源可许证，这里选择的是MIT License：
+- 点击创建会生成3个文件，readme为说明文件具体编写格式下面有具体说明，LICENSE文件为开源可许证，这里选择的是MIT License：
 ![创建成功](http://picture-ws.oss-cn-beijing.aliyuncs.com/WSCategory/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-10-13%20%E4%B8%8A%E5%8D%8811.45.41.png?Expires=1507869974&OSSAccessKeyId=TMP.AQF3AWFf2YDKJ_dyvr6nVlvg_vtKzDtjzXDTugc1IOCpP28NKgk23VOIcT3BAAAwLAIUF8Bj-uTz4hlJ2e-zgUt3OOjZ6MMCFHX9nZ0Qmlgrq7C1czPKEf_va67G&Signature=6Wi8%2FbgKhyEzSYURQ16tijCHtjo%3D "创建成功")<br />
 ## 2.clone 仓库到本地
-创建成功后，将仓库clone到本地。首先cd到本地仓库目录，然后clone到本地：
+- 创建成功后，将仓库clone到本地。首先cd到本地仓库目录，然后clone到本地：
 
         cd ~
         git clone https://gitee.com/ws1350/WSSpecs.git
+- 此时的目录结构为：
+
+        |____LICENSE
+        |____README.md
+
+## 3.在本地仓库中添加pod的依赖文件
+- 在本地仓库中创建一个文件夹存放共享类，并将相关的类放入目录中，如：
+
+- 执行命令创建podspec文件：
+
+        pod spec create WSSpecs（文件名）
+- 编辑podspec文件
+
+- 如果有需要的话可以创建一个demo目录存放测试代码，此时的目录结构为
+
+        |____LICENSE
+        |____README.md
+        |____WSSpecs.podspec
+        |____WSSpecs
+        |____WSSpecsDemo
+## 4.将代码提交到git仓库中
+- 在本地创建私有repo，执行命令：
+
+        pod repo add WSSpecs（仓库名） https://github.com/marklin2012/O2Specs.git（仓库地址）
+- 对编辑好的pod库进行验证，执行命令：
+        
+        pod lib lint --allow-warnings
+- 验证成功之后，将podspec添加到repo中
+
+        pod repo push WSSpecs（仓库名） WSSpecs.podspec（podspec文件）
 
 
 <br />
