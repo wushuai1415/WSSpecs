@@ -41,7 +41,8 @@
         pod repo push WSSpecs（仓库名） WSSpecs.podspec（podspec文件）
 
 
-
+## 附录一（pod lib lint 错误信息 及 解决方法）
+## 附录二（pod repo push 错误信息 及 解决方法）
          ERROR | [iOS] unknown: Encountered an unknown error ([!] /usr/bin/git clone https://github.com/wushuai1415/WSSpecs.git /var/folders/h0/dkxsqhyn0ldb6xznmdw3ywyw0000gn/T/d20171013-60019-13ykicu --template= --single-branch --depth 1 --branch 0.0.1
          错误原因：git仓库没有打tag
 <br />
@@ -57,7 +58,7 @@
 <br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-
+## 附录三（readme编辑格式）
 readme 格式:
 # 大标题：# 标题内容 或 标题内容 下跟上 =========，如：
         大标题
