@@ -39,7 +39,31 @@
 - 验证成功之后，将podspec添加到repo中
 
         pod repo push WSSpecs（仓库名） WSSpecs.podspec（podspec文件）
+## 5.使用私有repo
+- 执行命令搜索私有repo
 
+        pod search WSSpecs
+        
+        -> WSSpecs (0.0.1)
+            A tutorial of WSSpecs.
+            pod 'WSSpecs', '~> 0.0.1'
+            - Homepage: https://github.com/wushuai1415/WSSpecs
+            - Source:   https://github.com/wushuai1415/WSSpecs.git
+            - Versions: 0.0.1 [WSSpecs repo]
+- 编辑podfile文件
+
+        pod 'WSSpecs', '~> 0.0.1'
+- 执行命令拉取私有仓库
+
+        pod install
+- 此时可能会出现如下提示
+
+        Unable to find a specification for 'xxx'
+        原因是：CocoaPods 默认只会在 master 下搜索，而我们的在WSSpecs目录下
+- 解决方法：在podfile顶部添加source
+
+        source 'https://github.com/CocoaPods/Specs.git'        #官方仓库地址
+        source ‘https://github.com/wushuai1415/WSSpecs.git’        #私有仓库地址
 
 ## 附录一（pod lib lint 错误信息 及 解决方法）
 ## 附录二（pod repo push 错误信息 及 解决方法）
