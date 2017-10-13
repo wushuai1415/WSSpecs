@@ -27,8 +27,8 @@
             s.version      = "0.0.1" # 版本号
             s.summary      = "A tutorial of WSSpecs." # 简介
             s.description  = <<-DESC
-                            here is tutorial description.
-                            DESC # 摘要
+                            here is tutorial description. # 摘要
+                            DESC
             s.homepage     = "https://github.com/wushuai1415/WSSpecs" # 主页
             s.license      = "MIT" # 开源证书类型
             s.author       = { "吴帅" => "ws1350@hotmail.com" } # 作者
@@ -79,6 +79,8 @@
 
         source 'https://github.com/CocoaPods/Specs.git'        #官方仓库地址
         source ‘https://github.com/wushuai1415/WSSpecs.git’        #私有仓库地址
+- 重新pod install
+![5.1](http://picture-ws.oss-cn-beijing.aliyuncs.com/WSCategory/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-10-13%20%E4%B8%8B%E5%8D%883.15.46.png?Expires=1507882570&OSSAccessKeyId=TMP.AQF3AWFf2YDKJ_dyvr6nVlvg_vtKzDtjzXDTugc1IOCpP28NKgk23VOIcT3BAAAwLAIUF8Bj-uTz4hlJ2e-zgUt3OOjZ6MMCFHX9nZ0Qmlgrq7C1czPKEf_va67G&Signature=BNg66jfKky1Ig1btlEokIG5o9ms%3D "5.1")
 
 ## 附录一（pod lib lint 错误信息 及 解决方法）
 ## 附录二（pod repo push 错误信息 及 解决方法）
