@@ -16,12 +16,27 @@
 
 ## 3.在本地仓库中添加pod的依赖文件
 - 在本地仓库中创建一个文件夹存放共享类，并将相关的类放入目录中，如：
-
+![3.1](http://picture-ws.oss-cn-beijing.aliyuncs.com/WSCategory/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-10-13%20%E4%B8%8B%E5%8D%883.07.37.png?Expires=1507882127&OSSAccessKeyId=TMP.AQF3AWFf2YDKJ_dyvr6nVlvg_vtKzDtjzXDTugc1IOCpP28NKgk23VOIcT3BAAAwLAIUF8Bj-uTz4hlJ2e-zgUt3OOjZ6MMCFHX9nZ0Qmlgrq7C1czPKEf_va67G&Signature=FkFgDLdxzB0WVU1lM1si6g1lMHQ%3D "3.1")
 - 执行命令创建podspec文件：
 
         pod spec create WSSpecs（文件名）
-- 编辑podspec文件
+- 编辑podspec文件，根据项目情况进行编写
 
+        Pod::Spec.new do |s|
+            s.name         = "WSSpecs" # 名称
+            s.version      = "0.0.1" # 版本号
+            s.summary      = "A tutorial of WSSpecs." # 简介
+            s.description  = <<-DESC
+                            here is tutorial description.
+                            DESC # 摘要
+            s.homepage     = "https://github.com/wushuai1415/WSSpecs" # 主页
+            s.license      = "MIT" # 开源证书类型
+            s.author       = { "吴帅" => "ws1350@hotmail.com" } # 作者
+            s.ios.deployment_target = "5.0"
+            s.source       = { :git => "https://github.com/wushuai1415/WSSpecs.git", :tag => "#{s.version}" } # 源
+            s.source_files  = "WSSpecs", "*.{h,m}" # 共享类路径
+            s.framework  = "UIKit" # 依赖文件
+        
 - 如果有需要的话可以创建一个demo目录存放测试代码，此时的目录结构为
 
         |____LICENSE
@@ -69,21 +84,7 @@
 ## 附录二（pod repo push 错误信息 及 解决方法）
          ERROR | [iOS] unknown: Encountered an unknown error ([!] /usr/bin/git clone https://github.com/wushuai1415/WSSpecs.git /var/folders/h0/dkxsqhyn0ldb6xznmdw3ywyw0000gn/T/d20171013-60019-13ykicu --template= --single-branch --depth 1 --branch 0.0.1
          错误原因：git仓库没有打tag
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
 ## 附录三（readme编辑格式）
-readme 格式:
 # 大标题：# 标题内容 或 标题内容 下跟上 =========，如：
         大标题
         ==========
