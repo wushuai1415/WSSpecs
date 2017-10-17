@@ -16,7 +16,7 @@
 
 ## 3.在本地仓库中添加pod的依赖文件
 - 在本地仓库中创建一个文件夹存放共享类，并将相关的类放入目录中，如：
-![3.1](http://picture-ws.oss-cn-beijing.aliyuncs.com/WSCategory/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-10-13%20%E4%B8%8B%E5%8D%883.07.37.png?Expires=1507882127&OSSAccessKeyId=TMP.AQF3AWFf2YDKJ_dyvr6nVlvg_vtKzDtjzXDTugc1IOCpP28NKgk23VOIcT3BAAAwLAIUF8Bj-uTz4hlJ2e-zgUt3OOjZ6MMCFHX9nZ0Qmlgrq7C1czPKEf_va67G&Signature=FkFgDLdxzB0WVU1lM1si6g1lMHQ%3D "3.1")
+![3.1](http://picture-ws.oss-cn-beijing.aliyuncs.com/WSCategory/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-10-13%20%E4%B8%8B%E5%8D%883.07.37.png?Expires=1508215510&OSSAccessKeyId=TMP.AQGtDjzphalp-rJ6qiEK4xD9f23wSRmU27KjHVlCZx2jjfq8UV39z6qMOs1cADAtAhUA-NdFFCd159JYw0FbSCkijyg_qngCFFVLRFYMhTgtJVqUXWT5moPEWqnE&Signature=%2BVw48KgZnw4F287heRpOFMyW1C8%3D "3.1")
 - 执行命令创建podspec文件：
 
         pod spec create WSSpecs（文件名）
